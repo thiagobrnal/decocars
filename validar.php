@@ -2,6 +2,7 @@
 
 include('db.php');
 
+      //COMPRUEBA QUE EL USUARIO Y CONTRASEÑA SEAN CORRECTOS
 $usuario=$_POST['usuario'];
 $contraseña=$_POST['contraseña'];
 session_start();

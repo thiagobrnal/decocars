@@ -14,6 +14,8 @@ include('db.php');
 </head>
 <body bgcolor="#aa998c">
     <a href="index.html">Volver</a><br><br>
+
+			<!--FORMULARIO PRINCIPAL-->
  <form method="POST" action="stock.php">
 	 <label>Codigo<br></label>
 	 <input type="numer" name="codigo" placeholder = "Escriba el codigo" required><br />
@@ -28,13 +30,14 @@ include('db.php');
  </form>
 
 <?php
+
+			//RECIBE LOS DATOS DEL FORMULARIO Y LOS SUBE A AL BD
 	if(isset($_POST["insert"])){
 		$ccodigo = $_POST["codigo"];
 		$cnombre = $_POST["nombre"];
 		$ccant = $_POST["cant"];
 		$cdesc = $_POST["desc"];
 
-		//$insertar = "INSERT INTO user (codigo,nombre,cantidad,descripcion) VALUES ('$scodigo', '$snombre', '$scant', '$sdesc')";
         $insertar = "INSERT INTO stock (codigo, nombre, cantidad, descripcion) VALUES ('$ccodigo', '$cnombre', '$ccant', '$cdesc')";
 		$ejecutar = mysqli_query($con, $insertar);
 
@@ -46,6 +49,8 @@ include('db.php');
 	}
 ?>
 <br/>
+
+			<!--CREA LA TABLA DONDE SE VAN A VER LOS DATOS-->
 <center><table id="tabla" width="500" border="2" style="background-color: #F9F9F9;">
 	<tr>
 		<th>Codigo</th>
@@ -69,6 +74,7 @@ while ( $fila = mysqli_fetch_array($ejecutar)) {
 	$i++;
 
 ?>
+		<!--PONE LOS DATOS DE LA BD EN LA TABLA-->
 <tr align="center">
 <td><?php echo $ccodigo; ?></td>
 <td><?php echo $cnombre; ?></td>
@@ -92,6 +98,7 @@ if(isset($_GET['borrar'])){
 	$borrar = "DELETE FROM stock WHERE codigo = '$borrar_id'";
 	$ejecutar = mysqli_query($con, $borrar);
 
+		//MENSAJE DE ALERTA
 	if ($ejecutar){
 		echo "<script>alert('El usuario ha sido borrado!')</script>";
 		echo "<script>windoows.open('stock.php','_self')</script>";

@@ -8,6 +8,7 @@ if(isset($_GET['editar'])){
 
 	$fila = mysqli_fetch_array($ejecutar);
 
+			//COMPRUEBA QUE LOS DATOS EXISTAN EN LA BD
 	if(isset($fila['codigo'])){
 		$ccodigo = $fila['codigo'];
 	}
@@ -23,19 +24,23 @@ if(isset($_GET['editar'])){
 }
 ?>
 <br />
+
+			<!--FORMULARIO PARA ACTUALIZAR LOS DATOS-->
 <form method="POST" action="">
-<label>Codigo<br></label>
-<input type="number" name="codigo" value="<?php echo $ccodigo; ?>"><br />
-<label>Nombre<br> </label>
-<input type="text" name="nombre" value="<?php echo $cnombre; ?>"><br />
-<label>Cantidad<br></label>
-<input type="number" name="cant" value="<?php echo $ccant; ?>"><br />
-<label>Descripcion</label><br>
-<textarea name="desc" value="<?php echo $cdesc; ?>"></textarea><br>
-<input type="submiT" name="actualizar" value="ACTUALIZAR DATOS">
+	<label>Codigo<br></label>
+	<input type="number" name="codigo" value="<?php echo $ccodigo; ?>"><br />
+	<label>Nombre<br> </label>
+	<input type="text" name="nombre" value="<?php echo $cnombre; ?>"><br />
+	<label>Cantidad<br></label>
+	<input type="number" name="cant" value="<?php echo $ccant; ?>"><br />
+	<label>Descripcion</label><br>
+	<textarea name="desc" value="<?php echo $cdesc; ?>"></textarea><br>
+	<input type="submiT" name="actualizar" value="ACTUALIZAR DATOS">
 </form>
 
 <?php
+
+		//ACTUALIZA LOS DATOS
 if (isset($_POST['actualizar'])){
 $actualizar_codigo = $_POST['codigo'];
 $actualizar_nombre = $_POST['nombre'];
