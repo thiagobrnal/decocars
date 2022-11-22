@@ -3,7 +3,7 @@
 if(isset($_GET['editar'])){
 	$editar_id = $_GET['editar'];
 
-	$consulta = "SELECT * FROM stock WHERE codigo";
+	$consulta = "SELECT * FROM stock WHERE codigo='$editar_id'";
 	$ejecutar = mysqli_query($con, $consulta);
 
 	$fila = mysqli_fetch_array($ejecutar);
@@ -42,12 +42,12 @@ $actualizar_nombre = $_POST['nombre'];
 $actualizar_cant = $_POST['cant'];
 $actualizar_desc = $_POST['desc'];
 
-$actualizar = "UPDATE stock SET nombre='$actualizar_nombre', cantidad='$actualizar_cant', descripcion='$actualizar_desc' WHERE codigo";
+$actualizar = "UPDATE stock SET nombre='$actualizar_nombre', cantidad='$actualizar_cant', descripcion='$actualizar_desc' WHERE codigo='$editar_id'";
 $ejecutar = mysqli_query($con, $actualizar);
 
 if ($ejecutar){
 	echo "<script>alert('Datos Actualizados!')</script>";
-	echo "<script>windoows.open('ABC.php','_self')</script>";
+	echo "<script>windoows.open('stock.php','_self')</script>";
 }
 }
 ?>
