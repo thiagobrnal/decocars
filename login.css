@@ -1,0 +1,102 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: montserrat;
+    font-weight: 600;
+	text-align: center;
+}
+
+form {
+	padding: 50px 20px;
+	background-color: #aa998c;
+	margin: calc(25% + 100px);
+	margin-top: 70px;
+	padding-top: 28px;
+	margin-bottom: 30px;
+    border-radius: 2rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+}
+
+h1 {
+	text-align: center;
+	padding: 12px;
+	color:#302d29;
+    margin-top: 12px;
+}
+
+p{
+    color:#302d29;
+}
+
+input {
+	width: calc(100% - 20px);
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+    margin-bottom: 12px;
+	font-size: 16px
+}
+
+input[type='submit']{
+	background-color: #302d29;
+	color: #dfdbd6;
+	width: calc(80% - 20px);
+	margin: 0 10%;
+	margin-top: 22px;
+    border-radius: 2rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+	border: none;
+    
+	
+}
+
+input[type='submit']:hover{
+    background-color: #575049;
+}
+
+.ok {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #302d29;
+	color: #dfdbd6
+}
+.bad {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #302d29;
+	color: #dfdbd6
+}
+.off{
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #302d29;
+	color: #dfdbd6;
+
+}
+body{
+	background-color: #575049;
+}
+
+.mensaje{
+	width: 100%;
+	max-width: 350px;
+	margin: auto;
+	margin-top: 20px;
+	text-align: left;
+	padding: 6px;
+	color: #302d29;
+
+}
+
+body .volver a{
+    text-decoration: none;
+    color: #302d29;
+}
+
+body .volver a:hover{
+    color: #dfdbd6
+}
+

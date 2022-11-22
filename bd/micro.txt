@@ -1,0 +1,18 @@
+
+BD: micro
+
+
+CREATE TABLE usuarios (
+  id int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  usuario varchar(100) NOT NULL,
+  password varchar(255) NOT NULL
+)
+
+CREATE TABLE stock (
+  	codigo int (5) NOT NULL,
+    nombre varchar(255) NOT NULL,
+    cantidad int(100) NOT NULL,
+    descripcion varchar(255) NOT NULL
+)
+
+INSERT INTO `usuarios` (`id`, `usuario`, `password`) VALUES (NULL, 'thiago', '123456789');

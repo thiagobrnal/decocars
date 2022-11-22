@@ -1,0 +1,278 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+
+body {
+    text-align: center;
+    font-family: montserrat;
+    font-weight: 600;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background:#aa998c;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #302d29;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #dfdbd6;;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 60vh !important;
+    background: url(img/head.png) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #302d29;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #dfdbd6;
+    padding: 0 100px;
+}
+
+.info {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #302d29;
+    padding: 0 100px;
+}
+
+
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    background: #aa998c;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 6rem;
+    width: 17rem;
+    background: #302d29;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem; 
+    padding: 1em;  
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    color: #fff;
+    background: #dfdbd6;
+    
+    
+}
+
+.contenedor{
+    display: inline-block;
+    margin:5px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.tam{
+    background-image: url(img/img1.jpeg);
+    margin-right: 6rem;
+    width:160px;
+    height: 170px;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+}
+
+.tam1 {
+    background-image: url(img/img2.jpeg);
+    margin-left: 6rem;
+    width:160px;
+    height: 170px;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #dfdbd6;
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background: #80756b;
+}
+
+.price {
+    
+    padding: 30px;
+    background: #aa998c;
+
+}
+
+.map a{
+    text-decoration: none;
+    color: #302d29;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.map:hover a{
+    color: #dfdbd6;
+}
+
+.content i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #dfdbd6;
+    background: #575049;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+div.ig{
+    position: absolute;
+    left: 10%;
+}
+
+.ig a{
+    text-decoration: none;
+    color: #302d29;
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 3rem;
+}
+
+.ig:hover a{
+    color: #dfdbd6; 
+}
+
+div.wp{
+    display: inline-flex;
+    position: absolute;
+    left: 10%;
+    height: 0%;
+    margin-top: 5%;
+}
+ 
+.wp p {
+    color: #302d29;
+    text-transform: uppercase;
+    font-size: 20px;
+    height: auto;
+    width: auto;
+    padding: 0%;
+    margin-top:18% ;
+    margin-left: 5px;
+}
+
+.wp:hover p{
+    color: #dfdbd6; 
+}
+
+.contact {
+    padding-top: 20px;
+    background: #80756b;
+    padding-bottom: 0;
+}
+
+.navbar a .admin{
+    color:red;
+}
+
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+   
+    
+}
