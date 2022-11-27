@@ -73,6 +73,7 @@ body {
 }
 
 .title {
+    margin-top: 10px;
     margin-bottom: 40px;
     font-size: 60px;
     font-weight: 600;
@@ -94,6 +95,28 @@ p {
     padding: 0 100px;
 }
 
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #302d29;
+    color: #fff;
+    text-decoration: none;
+    background: #302d29;
+}
+
+.btn:hover {
+    background: none;
+    
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
 
 
 .content {
@@ -105,7 +128,7 @@ p {
 }
 
 .sau {
-    padding: 30px;
+    padding: 40px;
     background: #aa998c;
 }
 
