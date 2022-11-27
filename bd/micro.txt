@@ -1,4 +1,5 @@
-
+usuario: thiago
+contraseña: 123456789
 BD: micro
 
 
@@ -8,11 +9,23 @@ CREATE TABLE usuarios (
   password varchar(255) NOT NULL
 )
 
-CREATE TABLE stock (
-  	codigo int (5) NOT NULL,
-    nombre varchar(255) NOT NULL,
-    cantidad int(100) NOT NULL,
-    descripcion varchar(255) NOT NULL
-)
 
 INSERT INTO `usuarios` (`id`, `usuario`, `password`) VALUES (NULL, 'thiago', '123456789');
+
+
+CREATE TABLE `articulos` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `precio` varchar(50) NOT NULL,
+  `img` varchar(50) NOT NULL,
+  `cantidad` varchar(50) NOT NULL 
+) 
+
+
+ALTER TABLE `articulos`
+  ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `articulos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+

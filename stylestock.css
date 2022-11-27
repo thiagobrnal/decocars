@@ -2,7 +2,7 @@
     text-align: center;
     font-family: montserrat;
     font-weight: 600;
-    
+
     vertical-align: baseline;
     
 }
@@ -33,10 +33,6 @@ input{
     margin:8px;
 }
 
-textarea{
-    margin: 8px;
-}
-
 input[type='submit']{
 	background-color: #302d29;
 	color: #dfdbd6;
@@ -50,6 +46,17 @@ input[type='submit']:hover{
     background-color: #575049;
 }
 
-textarea{
-    box-align: center;
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #302d29;
+    color: #fff;
+    text-decoration: none;
+    background: #302d29;
+}
+
+.btn:hover {
+    background: none;
+    
 }
